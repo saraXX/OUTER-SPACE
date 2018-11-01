@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!---this code frome w3-School--->
+<html>
+<head>
+    <title>Space Myths</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" type="text/css" href="../css/MenuStyle.css"/>
+</head>
+<body style="background:url(giphy.gif); padding:10%; background-repeat:no-repeat;  width:100%; height:100%;">
+    <label for="toggle" class="bar"><img src="../images/icon_menu_new.png"/></label>
+  <!-- ______________________menu bar______________________ -->
+  <input type="checkbox" id="toggle"/>
+  <section class="trigger">
+      <label for="toggle" class="close">X</label>
+      <ul class="nav">
+        <li><a href="Home.html">Home</a></li>
+  			<li><a href="what.html">Whats Outer Space</a></li>
+  			<li><a href="history.html">History</a></li>
+  			<li><a href="Myths.html">Myths</a></li>
+  			<li><a href="solarSystem.html">Solar System</a></li>
+  			<li><a href="Satellites.html">Satellites</a></li>
+  			<li><a href="NASA.html">NASA</a></li>
+  			<li><a href="phenomena.html">Phenomena</a></li>
+  			<li><a href="Discoveries.html">Discoveries</a></li>
+  			<li><a href="gallery.html">Gallery</a></li>
+  			<li><a href="Q&A.html">Q&amp;A</a></li>
+  			<li><a href="quiz.html">Quizzes</a></li>
+  </ul>
+  </section>
+  <!--nav ends-->
+    <div>
+        <h1 style="color:auto; text-align:center; font-size:60px;">Space Myths</h1>
+    </div>
+
+    <div class="w3-content w3-display-container">
+
+        <div class="w3-display-container mySlides">
+            <img src="../images/po.gif" style="width:100%; height:100%;">
+            <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black w3-opacity-min ">
+               &nbsp   &nbsp   &nbsp space myths you still believed in <br/>
+				 we're gonna talk about the most common <br/>
+				 myths in space that you still believed in .
+            </div>
+
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="../images/sd.jpg" style="width:100%; height:100%;">
+            <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black w3-opacity-min ">
+                &nbsp   &nbsp   &nbsp Sounds in space <br/>
+				 Every science fiction movie with an epic space battle has classic laser sounds and the explosions of those lasers blasting apart spaceships. But the reality is there's no sound in space.
+                Sound is actually a wave, and that wave needs a medium, like the Earth's atmosphere, to go from the source of the sound to your ears. In a vacuum,
+                without any medium for sound waves to travel through, there is no sound. Sorry George Lucas, Space battles are really really silent.
+            </div>
+
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="../images/moon.jpg" style="width:100%; height:100%;">
+            <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black w3-opacity-min ">
+               &nbsp   &nbsp   &nbsp   There is a dark side of the moon <br/>
+			   Actually every part of the moon is illuminated at sometime by the sun. This misconception has come about because there is a side of the moon which is never visible to the earth.
+This is due to tidal locking; this is due to the fact that Earth’s gravitational pull on the moon is so immense that it can only show one face to us.
+Wikipedia puts it rather smartly thus: “Tidal locking occurs when the gravitational gradient makes one side of an astronomical body always face another; for example, one side of the Earth’s Moon always faces the Earth.
+A tidally locked body takes just as long to rotate around its own axis as it does to revolve around its partner. This synchronous rotation causes one hemisphere constantly to face the partner body.
+            </div>
+
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="../images/sdd.jpg" style="width:100%; height:100%;">
+            <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black w3-opacity-min ">
+                &nbsp   &nbsp   &nbsp ALL BLACK HOLES ARE BLACK <br/>
+				 Not all black holes are black , Some black holes power the brightest known objects in the universe, known as quasars . As material gets close to the event horizon it starts to speed up—and heat up—shining brightly until it passes through the event horizon.
+Another reason why black holes don’t necessarily appear to be black is due to the way they distort time. From the point of view of someone far away, a spaceship heading towards a black hole will never—literally never—appear to reach it. So if a bright object heads towards a black hole,
+its light will appear to float just outside the event horizon, getting redder and redder, and fainter and fainter, until it disappears. This is due to the phenomenon of red shifting
+
+            </div>
+
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="../images/ppp.jpg" style="width:100%; height:100%;">
+            <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black  w3-opacity-min  ">
+              &nbsp   &nbsp A human will explode in outer space without a space suit.  <br/>
+			  We've seen this movie where a person explodes when their space suit is removed. Outer space is deadly without a space suit,
+			  but you won't explode. You'll actually die from lack of oxygen after about two minutes.
+            </div>
+
+        </div>
+
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+    </div>
+
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+    </script>
+
+</body>
+</html>

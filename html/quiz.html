@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>space quiz</title>
+		<meta charset="UTF-8"/>
+		<link type='text/css' rel='stylesheet' href='../css/quiz.css'/>
+    <script type="text/javascript" src="../js/quiz.js" ></script>
+
+	</head>
+
+  <body style="margin: 0;">
+
+		<label for="toggle" class="bar"><img src="../images/icon_menu_new.png"/></label>
+	<input type="checkbox" id="toggle"/>
+		<section class="trigger">
+				<label for="toggle" class="close">X</label>
+		<ul class="nav">
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="what.html">Whats Outer Space</a></li>
+			<li><a href="history.html">History</a></li>
+			<li><a href="Myths.html">Myths</a></li>
+			<li><a href="solarSystem.html">Solar System</a></li>
+			<li><a href="Satellites.html">Satellites</a></li>
+			<li><a href="NASA.html">NASA</a></li>
+			<li><a href="phenomena.html">Phenomena</a></li>
+			<li><a href="Discoveries.html">Discoveries</a></li>
+			<li><a href="g.html">Gallery</a></li>
+			<li><a href="Q&A.html">Q&amp;A</a></li>
+			<li><a href="quiz.html">Quizzes</a></li>
+		</ul>
+	</section>
+
+	<!--menu ends-->
+
+  <div class="background">
+  <div class="container">
+  <div class="answer-holder">
+
+  <h1 class="quizHeader">space quiz!</h1>
+
+	<table style="width:583px">
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">1.which star is the center of our solar system?</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q1" value="1">
+	        <label id="correctString1">sun</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>ploto</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>moon</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>jupter</label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">2.wha is the distance between the sun and earth ?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>150,800,000km</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="1">
+	        <label id="correctString2">149,600,000km</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>1600,000,000km</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>130,000,000km</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">3.which planet is the closest to the sun ?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>earth</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="1">
+	        <label id="correctString3">mercury</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>venus</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>pluto</label>
+	    	</ul>
+		</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">4.which is the smallest and the coldest of all planets ?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>sun</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="1">
+	        <label id="correctString4">pluto</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>earth</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>venus</label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	</table>
+<br/>
+  <div class="button">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Submit" />
+    </div>
+
+<!--show only wrong answers on submit-->
+    <div class="quizAnswers" id="correctAnswer1"></div>
+	  <div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+    <div class="quizAnswers" id="correctAnswer4"></div>
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+	</div>
+
+</body>
+</html>

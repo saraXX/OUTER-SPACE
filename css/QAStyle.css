@@ -1,0 +1,266 @@
+/*CSS file for q&a page*/
+*{
+   padding: 0px;
+    margin: 0px;
+    border:0;
+}
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: #0d0d0d;
+}
+/*Nav starts*/
+.nav,.trigger{
+    list-style-type: none;
+    display:inline;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Oswald', sans-serif;
+    line-height: 150%;
+    font-size:150%;
+}
+.trigger,.nav li a{
+    text-decoration: none;
+    color: white;
+    transition: color .3s ease-out;
+}
+.trigger,.nav li a:hover{
+    color: #1a1aff;
+}
+#toggle{
+   opacity: 0;
+}
+.bar img{
+    width:2.8%;
+    height:2.8%;
+    margin-left:95.5%;
+    margin-top: 5px;
+    cursor:pointer;
+    z-index: 100; 
+}
+.trigger .close{
+    color:white;
+    margin-left:95%;
+    cursor: pointer;
+}
+.trigger{
+    visibility: hidden;
+    position: absolute;
+    left:100%;
+    top: 0%;
+    background-color: black;
+    z-index:10000;
+    transition: left 0s .75s;
+}
+[id="toggle"]:checked + .trigger{
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    visibility: visible;
+    left: 0%;
+    transition: left .45s ease-out;
+}
+/*nav ends*/
+#caption{
+    left: 0;
+    position:absolute;
+    top: 40%;
+    width: 100%;   
+    font-family: 'Just Another Hand', cursive;
+    letter-spacing: 10px;
+    font-size: 800%;
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(150, 150, 150, 0.6);
+}
+#bio{
+    left: 0;
+    position:absolute;
+    top: 56%;
+    width: 100%;   
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5px;
+    font-size: 90%;
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(150, 150, 150, 0.4); 
+}
+/*how to starts*/
+.how-wrap{
+    padding: 40px;
+    text-transform: uppercase;
+    color:rgb(240, 240, 240);
+    font-family: 'Josefin Sans', sans-serif;
+}
+h2{
+    font-size:200%;
+    font-weight: bolder;
+    letter-spacing:5px;
+}
+table{
+    font-size: 80%;
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+table tr th{
+    font-size: 170%;
+    letter-spacing: 5px;
+}
+table tr td a{
+    text-decoration: none;
+     color:rgb(240, 240, 240);
+    transition: color .3s ease-out;
+}
+table tr td a:hover{
+    color:#3399ff;
+}
+.header-img{
+    background-image: url(Earth_img.jpeg);
+    min-height: 700px; 
+    margin-top:.8%;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img1{
+    background-image: url(dual_monitor_nebula-wallpaper-1280x800.jpg);
+    min-height: 500px; 
+    margin-top:.8%;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.bg-img1 h3{
+    font-family: 'Bowlby One SC', cursive;
+    font-size:400%;
+    vertical-align: middle;
+    line-height: 500px; 
+    color: #0D0D0D;
+    text-shadow: 0px 3px 1px rgba(250, 250, 250, 0.6);
+}
+.wrap{
+    width: 40%;
+    display:inline-block;
+    margin-left:2%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    border-color: #ebebeb;
+    color: #ebebeb;
+    text-align: left;
+    border-radius: 3px;
+    padding:2px 10px 10px 10px;
+    box-shadow: 0px 0px 4px 1px rgba(148,148,148,0.50);
+    font-family: 'Raleway', sans-serif;
+}
+.wrap:hover{
+   box-shadow: 1px 1px 5px 2px rgba(148,148,148,0.50);
+}
+/*speech bubbles src:http://nicolasgallagher.com/pure-css-speech-bubbles/*/
+.questions {
+  position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  color: #000;
+  background-color: #3399ff;
+  border-radius: 10px;
+}
+/* creates triangle */
+.questions:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  right: 50px;
+  width: 0;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: #3399ff transparent;
+}
+/*.question2 for grey speech bubble*/
+.questions2 {
+  position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  color: #000;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+}
+/* creates triangle */
+.questions2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  right: 50px;
+  width: 0;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: #e6e6e6 transparent;
+}
+.wrap2{
+    width: 84%;
+    display:inline-block;
+    margin-left:2%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    border-color: #ebebeb;
+    color: #ebebeb;
+    text-align: left;
+    border-radius: 3px;
+    padding:2px 10px 10px 10px;
+    box-shadow: 0px 0px 4px 1px rgba(148,148,148,0.50);
+    font-family: 'Raleway', sans-serif;
+}
+.wrap2:hover{
+   box-shadow: 1px 1px 5px 2px rgba(148,148,148,0.50);
+}
+.bg-img2{
+    background-image: url(the_beacon-wallpaper-1280x800.jpg);
+    min-height: 300px; 
+    margin-top:.8%;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.bg-img2 h3{
+    font-family: 'Anton', sans-serif;
+    font-size:230%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    vertical-align: middle;
+    line-height: 320px; 
+    color: #3399ff;
+    text-shadow: 0px 1px 0px rgba(10, 10, 10, 1);
+}
+.bg-img3{
+    background-image: url(texture__space_by_mjag.jpg);
+    min-height: 300px; 
+    margin-top:.8%;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.bg-img3, footer{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 300px;
+}
+.bg-img3 a{
+    padding:10px;
+    background-color:#000; 
+    color:#f2f2f2;
+    text-decoration:none;
+    transition: background-color .3 ease-in;
+}
+.bg-img3 a:hover{
+    background-color: #262626;
+}

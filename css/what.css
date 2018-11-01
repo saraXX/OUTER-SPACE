@@ -1,0 +1,372 @@
+@import url(https://fonts.googleapis.com/css?family=Orbitron:400,700);
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+}
+.nav,.trigger{
+    list-style-type: none;
+    display:inline;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Oswald', sans-serif;
+    line-height: 150%;
+    font-size:140%;
+}
+.trigger,.nav li a{
+    text-decoration: none;
+    color: white;
+    transition: color .3s ease-out;
+}
+.trigger,.nav li a:hover{
+    color: #1a1aff;
+}
+#toggle{
+   opacity: 0;
+}
+.bar img{
+    width:2.8%;
+    height:2.8%;
+    margin-left:95.5%;
+    cursor:pointer;
+    z-index: 100;
+}
+.trigger .close{
+    color:white;
+    margin-left:95%;
+    cursor: pointer;
+}
+.trigger{
+    visibility: hidden;
+    position: absolute;
+    left:100%;
+    top: 0%;
+    background-color: black;
+    z-index:10000;
+    transition: left 0s .75s;
+}
+[id="toggle"]:checked + .trigger{
+    height:100%;
+    width:100%;
+    visibility: visible;
+    left: 0%;
+    transition: left .45s ease-out;
+}
+html, body {height: 100%; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+
+	height:100%;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.3;
+	width:100%;
+	color:#fff;
+	font-family: 'Orbitron', sans-serif;
+	background-image:url(http://solarscroller.rhettforbes.com/img/stars.jpg);
+	background-repeat: repeat;
+	background-color:#000;
+	overflow:hidden;
+  -webkit-animation: sky 82s linear infinite;
+  -moz-animation: sky 82s linear infinite;
+	-ms-animation: sky 82s linear infinite;
+	-o-animation: sky 82s linear infinite;
+	animation: sky 82s linear infinite;}
+
+.planet {
+	z-index:10;
+	height:auto;
+	overflow:hidden;
+	position: relative;
+	top: 50%;
+	left: 50%;
+
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+
+	-webkit-background-size:auto 100%;
+	-moz-background-size:auto 100%;
+	-o-background-size:auto 100%;
+	background-size:auto 100%;
+
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+
+	-webkit-animation:spin linear infinite;
+	-moz-animation:spin linear infinite;
+	-ms-animation:spin linear infinite;
+	-o-animation:spin linear infinite;
+	animation:spin linear infinite;}
+	.planet:before {
+		content:"";
+		display:block;
+		padding-top:100%;}
+
+.surface {
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	right:0;
+	pointer-events:none;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+
+	box-shadow:inset 0 0 5px 0 rgba(0,0,0,0.75);
+
+	-webkit-background-size:auto 100%;
+	-moz-background-size:auto 100%;
+	-o-background-size:auto 100%;
+	background-size:auto 100%;
+
+	-webkit-animation:spin linear infinite;
+	-moz-animation:spin linear infinite;
+	-ms-animation:spin linear infinite;
+	-o-animation:spin linear infinite;
+	animation:spin linear infinite;}
+
+	.sunlight {
+		position:absolute;
+		width:100%;
+		height:100%;
+		top:0;
+		right:0;
+		z-index:11;
+
+		background:-moz-linear-gradient(right,rgba(0, 0, 0, 1) 0%, rgba(1, 0, 31, 0) 50%);
+		background:-webkit-linear-gradient(right,rgba(0, 0, 0, 1) 0%, rgba(1, 0, 31, 0) 50%);
+		background:-o-linear-gradient(right,rgba(0, 0, 0, 1) 0%, rgba(1, 0, 31, 0) 50%);
+		background:linear-gradient(right,rgba(0, 0, 0, 1) 0%, rgba(1, 0, 31, 0) 50%);
+
+		-webkit-background-size:100% 100%;
+		-moz-background-size:100% 100%;
+		-o-background-size:100% 100%;
+		background-size:100% 100%}
+
+.moon-orbit {
+	width:100%;
+	height:100%;
+	display:block;
+	margin:auto;
+	position:absolute;
+	pointer-events:none;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	overflow:hidden;
+	z-index:12;
+
+	-webkit-animation:oz linear infinite;
+	-moz-animation:oz linear infinite;
+	-ms-animation:oz linear infinite;
+	-o-animation:oz linear infinite;
+	animation:oz linear infinite;}
+
+.moon {
+	position:relative;
+	top:50%;
+	z-index:20;
+	height:auto;
+	overflow:hidden;
+	pointer-events:auto;
+	left:0;
+	min-height:2px;
+	min-width:2px;
+
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+	box-shadow:inset 0 0 1px 0 rgba(0,0,0,0.75), 20px 0px 10px 0 rgba(0,0,0,0.75);
+
+	-webkit-background-size:auto 100%;
+	-moz-background-size:auto 100%;
+	-o-background-size:auto 100%;
+	background-size:auto 100%;
+
+	-webkit-transform:translate(0%,-50%);
+	-moz-transform:translate(0%,-50%);
+	-ms-transform:translate(0%,-50%);
+	-o-transform:translate(0%,-50%);
+	transform:translate(0%,-50%);
+
+	-webkit-animation:orbit linear infinite;
+	-moz-animation:orbit linear infinite;
+	-ms-animation:orbit linear infinite;
+	-o-animation:orbit linear infinite;
+	animation:orbit linear infinite;}
+
+	.moon:before {
+		content: "";
+		display: block;
+		padding-top: 100%;
+		width:100%;
+		height:100%;
+		background:-moz-linear-gradient(right,rgba(0, 0, 0, 1) 0%, rgba(1, 0, 31, 0) 50%);
+		background:-webkit-linear-gradient(right,rgba(0, 0, 0, 1) 0%, rgba(1, 0, 31, 0) 50%);
+		background:-o-linear-gradient(right,rgba(0, 0, 0, 1) 0%, rgba(1, 0, 31, 0) 50%);
+		background:linear-gradient(right,rgba(0, 0, 0, 1) 0%, rgba(1, 0, 31, 0) 50%);}
+
+
+/* ---------- EARTH ---------- */
+#earth {
+	width:1.6148935846067%;
+	-webkit-animation:aurora 6s linear infinite;
+	-moz-animation:aurora 6s linear infinite;
+	-ms-animation:aurora 6s linear infinite;
+	-o-animation:aurora 6s linear infinite;
+	animation:aurora 6s linear infinite}
+/* Planet */
+#earth .surface {
+	/* Texture */
+	background-image:url(http://solarscroller.rhettforbes.com/css/../img/earth.jpg);
+	/* Axis */
+	-webkit-transform:rotate(25deg);
+	-moz-transform:rotate(25deg);
+	-ms-transform:rotate(25deg);
+	-o-transform:rotate(25deg);
+	transform:rotate(25deg);
+  /* One Day */
+	-webkit-animation-duration:3s;
+	-moz-animation-duration:3s;
+	-ms-animation-duration:3s;
+	-o-animation-duration:3s;
+	animation-duration:3s;}
+
+/* ---------- THE MOON ---------- */
+
+#moon .moon, #moon.moon-orbit {
+	-webkit-animation-duration:82s;
+	-moz-animation-duration:82s;
+	-ms-animation-duration:82s;
+	-o-animation-duration:82s;
+	animation-duration:82s;}
+	#moon .moon {
+		width:0.44104876673929%;
+		background-image:url(http://solarscroller.rhettforbes.com/css/../img/moon.jpg);
+		left:100%;}
+	#moon.moon-orbit {
+		-webkit-transform:rotate(5.16deg);
+		-moz-transform:rotate(5.16deg);
+		-ms-transform:rotate(5.16deg);
+		-o-transform:rotate(5.16deg);
+		transform:rotate(5.16deg);}
+
+@keyframes orbit{
+	0% {left: 0%;  transform:scale(1, 1) }
+	25% {transform:scale(1.5, 1.5);}
+	50% {left: 100%;  transform:scale(1, 1)}
+	75% {transform:scale(0.5, 0.5);}
+	100% {left:0; transform:scale(1, 1)}
+}
+@-webkit-keyframes orbit{
+	0% {left: 0%;  transform:scale(1, 1) }
+	25% {left:50%; transform:scale(1.5, 1.5);}
+	50% {left: 100%;  transform:scale(1, 1)}
+	75% {left:50%; transform:scale(0.5, 0.5);}
+	100% {left:0; transform:scale(1, 1)}
+}
+
+@keyframes aurora{
+	0% {box-shadow: 0px -2px 4px 0px rgba(0, 255, 0,0);}
+	20% {box-shadow: 0px -2px 4px 0px rgba(0, 255, 0,0.5);}
+	40% {box-shadow: 0px -2px 4px 0px rgba(0, 255, 0,0);}
+	60% {box-shadow: 0px -2px 4px 0px rgba(0, 255, 0,0.5);}
+	80% {box-shadow: 0px -2px 4px 0px rgba(0, 255, 0,0);}
+	100% {box-shadow: 0px -2px 4px 0px rgba(0, 255, 0,0.5);}
+}
+@-webkit-keyframes aurora{
+	0% {box-shadow: 0px -2px 4px 0px rgba(0, 255, 0,0);}
+	20% {box-shadow: 0px -2px 4px 0px rgba(0, 255, 0,0.5);}
+	40% {box-shadow: 0px -2px 4px 0px rgba(0, 255, 0,0);}
+	60% {box-shadow: 0px -2px 4px 0px rgba(0, 255, 0,0.5);}
+	80% {box-shadow: 0px -2px 4px 0px rgba(0, 255, 0,0);}
+	100% {box-shadow: 0px -2px 4px 0px rgba(0, 255, 0,0.5);}
+}
+@keyframes spin{
+	from {background-position:0 0;}
+	to {background-position:-200% 0;}
+}
+@-webkit-keyframes spin{
+	from {background-position:0 0;}
+	to {background-position:-200% 0;}
+}
+@keyframes oz{
+	0% {z-index: 12;}
+	25% {z-index: 12;}
+	50% {z-index: 12;}
+	100% {z-index: 5;}
+}
+@-webkit-keyframes oz{
+	0% {z-index: 5;}
+	25% {z-index: 26;}
+	50% {z-index: 5;}
+	100% {z-index: 5;}
+}
+@keyframes sky {
+ 50% {background-position: 600px 0px;}
+ 100% {background-position: 1200px 0px;}
+}
+@-moz-keyframes sky {
+ 50% {background-position: 600px 0px;}
+ 100% {background-position: 1200px 0px;}
+}
+@-webkit-keyframes sky {
+ 50% {background-position: 600px 0px;}
+ 100% {background-position: 1200px 0px;}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Orbitron', sans-serif;
+	font-weight:700;
+	margin:0;
+	padding:0;
+	line-height:1.3;}
+	h6 { font-weight:400;}
+
+.logo {
+	width:100%;
+	position:absolute;
+  text-align: center;
+	top:0;
+	padding:1.5rem;}
+  .logo h1 {letter-spacing: 0.1em;}
+
+.content {
+  width:100%;
+  max-width:575px;
+  position:absolute;
+  bottom:0;
+  text-align:left;
+  padding:2rem;
+  opacity:0.3;
+  transition: opacity 0.5s ease;}
+  .content:hover { opacity:1;}
+
+p {
+  font-size:14px;
+  line-height:1.5;
+  font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:rgba(255,255,255,0.75)}
+
+a  {
+  text-decoration:none;
+  color:#f90;
+  transition: color 0.5s ease;}
+  a:hover  { color:#fff;}

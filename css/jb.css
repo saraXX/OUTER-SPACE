@@ -1,0 +1,42 @@
+body{
+   background-image:url('ff.png');
+
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:99%;
+   overflow:scroll;}
+
+    .center {
+	position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+	}
+	.center2 {text-align: center;}
+    .center3
+	{
+		position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 220%)
+	}
+	.center4
+	{
+		position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 248%)
+	}
+	.center5
+	{
+		position: absolute;
+    margin: auto;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%, 170%)
+	}

@@ -1,0 +1,80 @@
+div.container {
+  width: 100%;
+  min-width: 1000px;
+  position: absolute;
+}
+body{
+  background: black;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+h3{
+  color :	#ff472f;
+  font-family:ALGERIAN;
+}
+h1{
+  color :	#ffaa00;
+  font-family:ALGERIAN;
+  margin-bottom: -10px;
+}
+header {
+  padding: 2px;
+  font-size: 16ps;
+  color: blue;
+  background-color: black;
+  clear: left;
+  text-align: center;
+      }
+article ,html{
+  background: url("../images/bc2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+div.immg img {
+  postion: static;
+  width:1080px;
+  height:160px;
+  margin: 210px 0px -15px 250px;
+  padding: 5px;
+
+/* ----------------------------------------*/
+
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 9px double white;
+
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 500px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    right:50%;
+
+    margin-top: 50px;
+    margin-right:300px;
+
+/*animation*/
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+        opacity: 0.5;
+}

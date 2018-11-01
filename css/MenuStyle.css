@@ -1,0 +1,51 @@
+
+.nav,.trigger{
+    list-style-type: none;
+    display:inline;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Oswald', sans-serif;
+    line-height: 150%;
+    font-size:150%;
+}
+.trigger,.nav li a{
+    text-decoration: none;
+    color: white;
+    transition: color .3s ease-out;
+}
+.trigger,.nav li a:hover{
+    color: #1a1aff;
+}
+#toggle{
+   opacity: 0;
+}
+.bar img{
+  position:inherit;
+    width:2.8%;
+    height:2.8%;
+
+    margin-left:95.5%;
+    cursor:pointer;
+    z-index: 1;
+}
+.trigger .close{
+    color:white;
+    margin-left:95%;
+    cursor: pointer;
+}
+.trigger{
+    visibility: hidden;
+    position: fixed;
+    left:100%;
+    top: 0%;
+    background-color: black;
+    z-index:10000;
+    transition: left 0s .75s;
+}
+[id="toggle"]:checked + .trigger{
+    height:100%;
+    width:100%;
+    visibility: visible;
+    left: 0%;
+    transition: left .45s ease-out;
+}
