@@ -8,4 +8,4 @@ it's about space and nasa it's cool take a look at it
 2. open the following file 
     - html>HOME.html
     
-[preview1](/2020-08-25 (5).png)
+![preview1](/2020-08-25 (5).png)
